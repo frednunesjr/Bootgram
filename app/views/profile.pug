@@ -1,0 +1,62 @@
+extends template
+block main
+	.container
+		.row.align-items-center.justify-content-center.py-4
+			.col-md-3
+				.border.rounded-circle Profile
+			.col-md-6.d-grid.gap-4
+				.d-flex.gap-4.align-items-center
+					h2.fs-3.lead.d-inline frednunesjr
+					button.btn.btn-sm.btn-outline-secondary.text-dark Editar Perfil
+					i.bi.bi-gear-wide.fs-4
+				.d-flex.gap-5
+					div
+						span.fw-bold 35
+						span publicações
+					div
+						span.fw-bold 35
+						span seguidores
+					div
+						span.fw-bold 35
+						span seguindo
+				div
+					div.fw-bold Fredson Trinci Nunes
+					div.text-secondary Desenvolvedor Full Stack
+					div
+						| ✝️ Jesus
+						br
+						| 💍 Casado com a @gabitrinci e Pai da Alice 👨‍👩‍👧
+						br
+						| 💻 Dev JavaScript Full Stack
+						br
+						| 🎓 Comunicação Social: Rádio e TV
+						br
+						| 🇧🇷 São Paulo / SP
+		
+		.row.row-cols.justify-content-center
+			ul(id="profileTabs" class="nav nav-tabs justify-content-center" role="tablist")
+				li(class="nav-item" role="presentation")
+					button(id="postsTab" class="nav-link active text-uppercase" data-bs-toggle="tab" data-bs-target="#postsFeed" type="button" role="tab")
+						i.bi.bi-grid-3x3.me-2
+						| Publicações
+				li(class="nav-item" role="presentation")
+					button(id="reelsTab" class="nav-link text-uppercase" data-bs-toggle="tab" data-bs-target="#reelsFeed" type="button" role="tab")
+						i.bi.bi-play-btn.me-2
+						| Reels
+				li(class="nav-item" role="presentation")
+					button(id="savedTab" class="nav-link text-uppercase" data-bs-toggle="tab" data-bs-target="#savedFeed" type="button" role="tab")
+						i.bi.bi-bookmark.me-2
+						| Salvos
+				li(class="nav-item" role="presentation")
+					button(id="taggedTab" class="nav-link text-uppercase" data-bs-toggle="tab" data-bs-target="#taggedFeed" type="button" role="tab")
+						i.bi.bi-person-video.me-2
+						| Marcados
+			#profileContent.tab-content
+				#postsFeed.tab-pane.fade.show.active(role="tabpanel")
+					| Feed
+				#reelsFeed.tab-pane.fade(role="tabpanel")
+					| Reels
+				#savedFeed.tab-pane.fade(role="tabpanel")
+					| Salvos
+				#taggedFeed.tab-pane.fade(role="tabpanel")
+					| Marcados
