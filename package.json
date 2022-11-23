@@ -1,15 +1,14 @@
 {
-  "name": "instagram-bootstrap",
-  "version": "1.0.0",
-  "description": "Instagram Bootstrap",
-  "main": "server.js",
+  "name": "bootgram",
+  "version": "2.0.0",
+  "description": "Instagram Based study app, styled with Bootstrap, built with React and React-Bootstrap, powered by NextJS",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
-  "author": "Fred Nunes",
+  "author": "frednunesjr",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.2.3",
