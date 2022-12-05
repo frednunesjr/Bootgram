@@ -14,7 +14,7 @@ function Profile() {
     })
 
     return (
-        <Container>
+        <>
             <Row className='align-items-center justify-content-center py-4'>
                 <Col md={3}>
                     <Image roundedCircle src="/img/fred.jpg" />
@@ -83,7 +83,7 @@ function Profile() {
                     </Tab>
                 </Tabs>
             </Row>
-        </Container>
+        </>
     )
 
 }

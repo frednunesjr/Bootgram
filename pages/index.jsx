@@ -1,11 +1,7 @@
-import Topbar from "../components/Topbar";
-
-function Index(){
+export default function Index(){
 
     return(
-        <Topbar />
+        <h1>Teste</h1>
     )
 
 }
-
-export default Index;

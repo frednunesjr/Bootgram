@@ -6,11 +6,13 @@ export default function Layout({ children }) {
         <>
             <Container fluid>
                 <Row>
-                    <Col md={2} className='d-grid vh-100 position-relative'>
+                    <Col md={2} className='d-grid vh-100 position-relative border-end'>
                         <Sidebar />
                     </Col>
-                    <Col>
-                        <main>{children}</main>
+                    <Col className='bg-light'>
+                        <Container as='main'>
+                            {children}
+                        </Container>
                     </Col>
                 </Row>
             </Container>
