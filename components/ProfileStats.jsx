@@ -1,4 +1,4 @@
-function ProfileStats({ label, data }) {
+export default function ProfileStats({ label, data }) {
     return (
         <div>
             <span className='fw-bold'>{data}</span>
@@ -7,5 +7,3 @@ function ProfileStats({ label, data }) {
         </div>
     )
 }
-
-export default ProfileStats;

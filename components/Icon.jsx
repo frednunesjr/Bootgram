@@ -1,7 +1,5 @@
-function Icon({name, className}){
+export default function Icon({name, className}){
     return (
         <i className={`bi bi-${name} ${className}`}></i>
     )
 }
-
-export default Icon;
